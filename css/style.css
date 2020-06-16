@@ -1,0 +1,142 @@
+img {
+  width: 100%;
+}
+
+body {
+  color: black;
+  background-color: lavenderblush;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+a {
+  font-size: 16px;
+  color: black;
+}
+
+.header a {
+  font-size: 16px;
+  color: black;
+}
+
+.footer a {
+  font-size: 36px;
+  color: black;
+}
+
+a {
+  color: #fff0f5;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:hover {
+  color: #e6e6fa;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:visited {
+  /* visited link */
+  color: #ff7f50;
+}
+
+a:active {
+  /* selected link */
+  color: #994c30;
+}
+
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #ffffff;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: #ffe4e1;
+  color: #000000;
+  text-transform: uppercase;
+  border: 1px solid #ffe4e1;
+}
+
+.button.contact:hover {
+  background-color: #000000;
+  color: #ffe4e1;
+}
+
+a {
+  color: #ff7f50;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:visited {
+  /* visited link */
+  color: #000000;
+}
+
+a:hover,
+a:focus {
+  color: #e6e6fa;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #e6e6fa;
+}
+
+/*
+Colors used:
+(lavenderblush): #FFF0F5;
+(lavender): #E6E6FA;
+(floralwhite): #FFFAF0;
+(mistyrose): #FFE4E1;
+(snow): #FFFAFA;
+(black): #000000;
+/*

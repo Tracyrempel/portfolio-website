@@ -4,6 +4,16 @@
 <head>
 
 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
   <link rel="apple-touch-icon" sizes="180x180" href="img/tracy_com/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/tracy_com/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/tracy_com/favicon-16x16.png">
@@ -22,21 +32,22 @@
 
 <body>
 
+
   <header>
 
 
-    <div>
+    <div class="header">
 
-    &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/tracy_com/logo.svg" style="float: left" alt="Tracy logo">
+      &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/tracy_com/logo.svg" style="float: left" alt="Tracy logo">
 
 
       <nav align="right">
 
 
 
-     <a style="font-family : Avenir Book ; color:black ; font-size : 12pt" href="index.html">Designs</a>  &nbsp;&nbsp;&nbsp;&nbsp;
-   <a style="font-family : Avenir Book ; color:black ; font-size : 12pt" href="about.html">About</a>  &nbsp;&nbsp;&nbsp;&nbsp;
-     <a style="font-family : Avenir Book ; color:black ; font-size : 12pt" href="#contact">Contact</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="index.html">Designs</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="about.html">About</a> &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#contact">Contact</a> &nbsp;&nbsp;&nbsp;&nbsp;
 
       </nav>
 
@@ -45,48 +56,62 @@
 
   <main>
     <br><br><br><br>
-    <div>
-      <h1 style="font-family : Avenir Light ; color:black ; font-size : 24pt" align="center"> <br>Hello I'm Tracy!
+    <div id="hello">
+      <h1 align="center"> <br>Hello I'm Tracy!
         <br>& I'm a Düsseldorf-based UI/UX Designer with a
         background <br> in Web Development and Biology.</h1>
-        <br><br><br>
+      <br><br><br>
       <img src="img/tracy_com/bang.svg" style="border:200px;margin:50px" alt="Bang">
 
 
 
-      <h2 style="font-family : Avenir Black ; color:black ; font-size : 24pt" align="center">My Work</h2>
+      <h2 align="center">My Work</h2>
 
     </div>
 
-    <div>
+    <div id="coolor">
       <img src="img/coolor/coolor_image.jpg" style="border:100px;margin:100px ; float: left" alt="coolor image" height="40%" width="40%">
-      <h3 style="font-family : Avenir heavy ; color:black ; font-size : 16pt"> <br><br><br><br><br><br><br> Coolor; an app for Art Therapy</h3>
-      <p style="font-family : Avenir Light ; color:black ; font-size : 12pt">We all need the advice of an expert sometimes, and how-
+
+
+
+
+      <!-- why is this not working???
+      <picture>
+        <source srcset="img/coolor/coolor_image.jpg/600x400" media="(max-width:767px)">
+        <img src="img/coolor/coolor_image.jpg/1200x800" alt="coolor_image">
+      </picture>
+      >-->
+
+      <h3> <br><br><br><br><br> Coolor; an app for Art Therapy</h3>
+      <p>We all need the advice of an expert sometimes, and how-
         to videos don’t always cut it. The goal of this app is to give
         people a simple, intuitive way to connect with an expert in
         nearly any field within seconds so they can feel more informed
         and more prepared to face their everyday (and not-so-everyday)
         problems.</p>
       <nav align="right">
-        <a style="font-family : Avenir Book ; color:black ; font-size : 12pt" href="https://www.behance.net/gallery/97031751/Coolor-An-app-for-Art-Therapy">View Project</a>
+          <!--link
+        <a href="https://www.behance.net/gallery/97031751/Coolor-An-app-for-Art-Therapy">View Project</a> >-->
+        <a href="https://www.behance.net/gallery/97031751/Coolor-An-app-for-Art-Therapy" class="button">View Project</a>
     </div>
 
-    <div>
+    <div id="wibu">
       <img src="img/wibu/wibu_image.png" style="border:100px;margin:100px; float: left" alt="coolor image" height="40%" width="40%">
-      <h3 style="font-family : Avenir heavy ; color:black ; font-size : 16pt"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> WIBU; an ERP app for Riedel Communications</h3>
-      <p style="font-family : Avenir Light ; color:black ; font-size : 12pt">Coming Soon</p>
+      <h3> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> WIBU; an ERP app for Riedel Communications</h3>
+      <p>Coming Soon</p>
       <nav align="right">
-        <a style="font-family : Avenir Book ; color:black ; font-size : 12pt" href="#">View Project</a>
+        <a href="#">View Project</a>
     </div>
 
 
   </main>
 
-  <footer align="center" >
-    <div>
-      <h1 style="font-family : Avenir heavy ; color:black"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Want to work together? </h3>
-      <h4 style="font-family : Avenir light ; color:black">If you like what you see and want to discuss opportunities, please get in touch! :) </h4>
-      <a style="font-family : Avenir book ; color:black ; font-size : 36pt" href="mailto:tracyrempel@gmail.com">hello@tracyux.com</a>
+  <footer align="center">
+    <div class="footer" id="email">
+      <h3> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Want to work together? </h3>
+      <p>If you like what you see and want to discuss opportunities, please get in touch! :) </p>
+
+      <a href="mailto:tracyrempel@gmail.com" class="button contact">hello@tracyux.com</a>
     </div>
 
     <br><br><br><br><br><br><br>
@@ -116,7 +141,7 @@
 
 
     <br>
-    <div>
+    <div id="copyright">
       <img src="img/tracy_com/copyright.svg" style="border:5px;margin:5px" alt="copyright" height="10%" width="10%">
     </div>
 
