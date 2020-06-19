@@ -2,12 +2,42 @@ img {
   width: 100%;
 }
 
+/* padding */
+/* Layout styling */
+header {
+  text-align: left;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  margin: 0px;
+  border-bottom: 3px solid #ffffff;
+
+  /* border */
+  /* Layout styling */
+  selector {
+    margin: 0 auto;
+    /* No spacing to top and bottom and auto spacing to left and right */
+    /* Layout styling */
+  }
+}
+
+/* want the box to maintain some distance between the other elements of the page */
+/* Layout styling */
+* {
+  box-sizing: border-box;
+}
+
+/* total width , set width*/
 body {
   color: black;
   background-color: lavenderblush;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
+  margin: 0;
   /* Sets the font size to 16px */
+  /* Layout styling */
 }
 
 h1, h2, h3, h4 {
@@ -22,6 +52,7 @@ h1 {
 h2 {
   font-size: 36px;
   font-weight: 700;
+  text-align: center;
 }
 
 h3 {
@@ -61,9 +92,10 @@ a {
 }
 
 a:hover {
-  color: #e6e6fa;
+  color: #da70d6;
   text-decoration: underline;
   /* Underlining when hovering over a link */
+  /* Layout styling */
 }
 
 a:visited {
@@ -79,43 +111,49 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #ffffff;
+  /* Layout styling */
+  background-color: #e6e6fa;
+  color: #000000;
   /* needed to override the default link color */
+  /* Layout styling */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30;
+  border-bottom: 2px solid #e6e6fa;
   /* width of the border, type, color */
+  /* Layout styling */
   transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
+  /* Layout styling */
   text-decoration: none;
 }
 
 .button.contact {
-  background-color: #ffe4e1;
+  background-color: #e6e6fa;
   color: #000000;
-  text-transform: uppercase;
-  border: 1px solid #ffe4e1;
+  text-transform: lowercase;
+  border: 1px solid #e6e6fa;
 }
 
-.button.contact:hover {
+.buttoncontact:hover {
   background-color: #000000;
-  color: #ffe4e1;
+  color: #9370db;
 }
 
 a {
-  color: #ff7f50;
+  color: #000000;
   text-decoration: none;
   /* No underlining */
+  /* Layout styling */
 }
 
 a:visited {
   /* visited link */
+  /* Layout styling */
   color: #000000;
 }
 
@@ -124,16 +162,72 @@ a:focus {
   color: #e6e6fa;
   text-decoration: underline;
   /* Underlining when hovering over a link */
+  /* Layout styling */
 }
 
 a:active {
   /* selected link */
+  /* Layout styling */
   color: #e6e6fa;
 }
 
+.container {
+  padding: 0 5px;
+  /* padding = space inside the box */
+}
+
+.row {
+  margin: 25px 0;
+  /* add margins at top and bottom of the rows */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #000000;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+.logo {
+  max-width: 200px;
+}
+
+/* logo size */
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  padding: 0 15px;
+  display: inline-block;
+}
+
+/* keep navigation in one line */
+
+
+.socialmedia img {
+  max-width: 25px
+}
+
+
+@media only screen and (max-width: 600px) {
+  .socialmedia {
+    justify-content: space-around;
+    display: flex;
+    padding-top: 45px;
+  }
+
+}
+/* media queries */
+
+/* keeps the social media icons small */
 /*
 Colors used:
-(lavenderblush): #FFF0F5;
+(lavenderblush): #FFF0F5; #fff0f5
 (lavender): #E6E6FA;
 (floralwhite): #FFFAF0;
 (mistyrose): #FFE4E1;
