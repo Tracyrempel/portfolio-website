@@ -5,12 +5,10 @@ img {
 /* padding */
 /* Layout styling */
 header {
-  position: fixed;
-  display: inline-block
   text-align: left;
   background-color: #ffffff;
   padding-top: 10px;
-  padding-right: 60px;
+  padding-right: 0px;
   padding-bottom: 10px;
   padding-left: 0px;
   margin: 0px;
@@ -25,15 +23,10 @@ header {
   }
 }
 
-
 /* want the box to maintain some distance between the other elements of the page */
 /* Layout styling */
 * {
   box-sizing: border-box;
-}
-
-main {
-  padding-top: 133px;
 }
 
 /* total width , set width*/
@@ -107,7 +100,7 @@ a:hover {
 
 a:visited {
   /* visited link */
-  color: #6a5acd;
+  color: #ff7f50;
 }
 
 a:active {
@@ -119,14 +112,14 @@ a:active {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   /* Layout styling */
-  background-color: #fdcfc9;
+  background-color: #e6e6fa;
   color: #000000;
   /* needed to override the default link color */
   /* Layout styling */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #fdcfc9;
+  border-bottom: 2px solid #e6e6fa;
   /* width of the border, type, color */
   /* Layout styling */
   transition: 0.2s opacity;
@@ -146,10 +139,9 @@ a:active {
   border: 1px solid #e6e6fa;
 }
 
-.button.contact:hover {
-  background-color: #ffe4e1;
-  color: #483d8b;
-  border: 1px solid #ffe4e1;
+.buttoncontact:hover {
+  background-color: #000000;
+  color: #9370db;
 }
 
 a {
@@ -167,7 +159,7 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #ff7f50;
+  color: #e6e6fa;
   text-decoration: underline;
   /* Underlining when hovering over a link */
   /* Layout styling */
@@ -196,11 +188,6 @@ a:active {
 
 #hero h1 {
   text-align: center;
-  margin: 0;
-  padding: 3em 0;
-}
-
-
   /* Centers text */
 }
 
@@ -220,9 +207,12 @@ nav>ul>li {
 }
 
 /* keep navigation in one line */
+
+
 .socialmedia img {
   max-width: 25px
 }
+
 
 @media only screen and (max-width: 600px) {
   .socialmedia {
@@ -230,28 +220,17 @@ nav>ul>li {
     display: flex;
     padding-top: 45px;
   }
-}
 
-#hero {
-  background-color: #fff0f5;
-}
-
-#bangimage {
-  background-color: #ffffff;
-}
-
-#work {
-  background-color: #ffffff;
-}
-
-#profilepic {
-  background-color: #fff0f5;
-}
-#myvalues {
-  background-color: #ffffff;
-}
-
-#giveityour100 {
-  background-color: #ffffff;
 }
 /* media queries */
+
+/* keeps the social media icons small */
+/*
+Colors used:
+(lavenderblush): #FFF0F5; #fff0f5
+(lavender): #E6E6FA;
+(floralwhite): #FFFAF0;
+(mistyrose): #FFE4E1;
+(snow): #FFFAFA;
+(black): #000000;
+/*
