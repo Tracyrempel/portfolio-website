@@ -2,47 +2,42 @@ img {
   width: 100%;
 }
 
-/* padding */
-/* Layout styling */
-header {
-  position: fixed;
-  display: inline-block
-  text-align: left;
-  background-color: #ffffff;
-  padding-top: 10px;
-  padding-right: 60px;
-  padding-bottom: 10px;
-  padding-left: 0px;
-  margin: 0px;
-  border-bottom: 3px solid #ffffff;
-
-  /* border */
-  /* Layout styling */
-  selector {
-    margin: 0 auto;
-    /* No spacing to top and bottom and auto spacing to left and right */
-    /* Layout styling */
-  }
+.letstalk {
+  width: 100%;
 }
 
+.scaled:hover {
+  opacity: 1;
+  /*transform: translateX(5px) translateY(5px) translateZ(5px);*/
+  transform: scale(0.92);
+  display: block;
+  transition: opacity 200ms ease 0s, transform 600ms ease 0s;
+}
 
-/* want the box to maintain some distance between the other elements of the page */
-/* Layout styling */
+header {
+  position: static;
+  display: block;
+  text-align: unset;
+  background-color: #ffffff;
+  margin: 0px;
+  border-bottom: 3px solid #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 5px;
 }
 
 /* total width , set width*/
 body {
   color: black;
-  background-color: lavenderblush;
+  background-color: white;
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 16px;
-  margin: 0;
+  font-size: 18px;
+  /*margin: 25px 100px;*/
   /* Sets the font size to 16px */
   /* Layout styling */
 }
@@ -99,7 +94,7 @@ a {
 }
 
 a:hover {
-  color: #da70d6;
+  color: #ffffff;
   text-decoration: underline;
   /* Underlining when hovering over a link */
   /* Layout styling */
@@ -117,76 +112,83 @@ a:active {
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  /* Layout styling */
-  background-color: #fdcfc9;
+  background-color: #f0f8ff;
   color: #000000;
-  /* needed to override the default link color */
-  /* Layout styling */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #fdcfc9;
-  /* width of the border, type, color */
-  /* Layout styling */
-  transition: 0.2s opacity;
+  border-bottom: 2px solid #000000;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
-  /* Layout styling */
   text-decoration: none;
+  background-color: #f0ffff;
+  color: #000000;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #000000;
 }
 
 .button.contact {
-  background-color: #e6e6fa;
+  background-color: #f0ffff;
   color: #000000;
-  text-transform: lowercase;
-  border: 1px solid #e6e6fa;
+  text-transform: uppercase;
+  border: 1px solid #f0fff0;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #000000;
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button.contact:hover {
-  background-color: #ffe4e1;
-  color: #483d8b;
-  border: 1px solid #ffe4e1;
+  background-color: #f0f8ff;
+  color: #000000;
+  border: 1px solid #f0f8ff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #000000;
+  opacity: 0.8;
 }
 
 a {
   color: #000000;
   text-decoration: none;
-  /* No underlining */
-  /* Layout styling */
 }
 
 a:visited {
-  /* visited link */
-  /* Layout styling */
-  color: #000000;
+  color: #696969;
 }
 
 a:hover,
 a:focus {
-  color: #ff7f50;
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
-  /* Layout styling */
+  color: #a9a9a9;
+  text-decoration: line-through;
 }
 
 a:active {
-  /* selected link */
-  /* Layout styling */
   color: #e6e6fa;
 }
 
 .container {
-  padding: 0 5px;
-  /* padding = space inside the box */
+  padding: 0 20px;
+}
+
+.containerprofilepic {
+  float: left;
+  padding: 0 50px;
+  text-align: center;
 }
 
 .row {
   margin: 25px 0;
-  /* add margins at top and bottom of the rows */
+  align-content: center;
 }
 
 #work .row {
@@ -196,44 +198,70 @@ a:active {
 
 #hero h1 {
   text-align: center;
-  margin: 0;
+  margin: 30px;
   padding: 3em 0;
-}
-
-
-  /* Centers text */
 }
 
 .logo {
   max-width: 200px;
+  float: left;
 }
 
-/* logo size */
+.copyright img {
+  max-width: 150px;
+  align: center;
+}
+
+.copyright {
+  padding-top: 45px;
+}
+
 nav>ul {
   list-style-type: none;
-  padding: 0;
+  padding-top: 16px;
 }
 
 nav>ul>li {
-  padding: 0 15px;
+  padding-left: 30px;
   display: inline-block;
 }
 
-/* keep navigation in one line */
 .socialmedia img {
-  max-width: 25px
+  width: 25px;
 }
 
-@media only screen and (max-width: 600px) {
+.socialmedia a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 325px) {
   .socialmedia {
     justify-content: space-around;
     display: flex;
+    padding-top: 45px;
+  }
+
+  .socialmedia a {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (min-width: 326px) {
+  .socialmedia {
+    justify-content: space-around;
+    display: block;
     padding-top: 45px;
   }
 }
 
 #hero {
   background-color: #fff0f5;
+}
+
+#hero span {
+  display: block;
 }
 
 #bangimage {
@@ -244,9 +272,11 @@ nav>ul>li {
   background-color: #ffffff;
 }
 
-#profilepic {
+.profilepic {
   background-color: #fff0f5;
+  float: left;
 }
+
 #myvalues {
   background-color: #ffffff;
 }
@@ -254,4 +284,62 @@ nav>ul>li {
 #giveityour100 {
   background-color: #ffffff;
 }
+
 /* media queries */
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: right;
+    /*padding: 20px 0 13px;*/
+  }
+
+  nav {
+    width: auto;
+    float: right margin-top: 30px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-l6 {
+    width: 30%;
+  }
+
+  .col-md-r6 {
+    width: 70%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
