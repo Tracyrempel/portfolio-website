@@ -3,6 +3,10 @@
 
 <head>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://kit.fontawesome.com/ecfc8356ae.js" crossorigin="anonymous"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -27,14 +31,18 @@
 
   <header>
     <div class="container">
-      <img src="img/tracy_com/logo.svg" class="logo" alt="Tracys logo"><!-- -->
-      <nav align="right">
-        <ul>
-          <li><a href="index.html">Designs</a> </li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+          <div class="navtoggle" id="myNavtoggle">
+            <img src="img/tracy_com/logo.svg" class="logo" alt="Tracys logo"><!-- -->
+            <nav align="right">
+              <ul>
+                <li><a href="index.html">Designs</a> </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+
     </div>
   </header>
 
@@ -208,7 +216,7 @@
       <img src="img/tracy_com/copyright.svg" alt="copyright">
     </div>
   </footer>
-  
+
   <script src="js/script.js"></script>
 
 </body>
