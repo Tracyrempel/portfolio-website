@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=SF+Pro Display:500|Helvetica+Neue:400|Avenir:200,400,900,500');
 
-
 .coolor1 {
   width               : 100%;
   min-width           : 1920px;
@@ -11264,7 +11263,7 @@ div {
   -webkit-animation-delay: 0;
   -moz-animation-delay: 0;
   -o-animation-delay  : 0;
-  animation-delay     : 0;
+  /*animation-delay     : 0;*/
 }
 @-webkit-keyframes anima-reveal {
   0%
@@ -11353,12 +11352,12 @@ div {
 .anima-listeners-active-click * {
   cursor              : pointer;
 }
-.anima-word-break {
+/*.anima-word-break {
   overflow-wrap       : break-word;
   word-wrap           : break-word;
   word-break          : break-all;
   word-break          : break-word;
-}
+}*/
 
 .coolor11 {
   width               : 100%;
@@ -18827,7 +18826,7 @@ div {
   -webkit-animation-delay: 0;
   -moz-animation-delay: 0;
   -o-animation-delay  : 0;
-  animation-delay     : 0;
+  /*animation-delay     : 0;*/
 }
 @-webkit-keyframes anima-reveal {
   0%
@@ -18915,10 +18914,4 @@ div {
 .anima-listeners-active-click,
 .anima-listeners-active-click * {
   cursor              : pointer;
-}
-.anima-word-break {
-  overflow-wrap       : break-word;
-  word-wrap           : break-word;
-  word-break          : break-all;
-  word-break          : break-word;
 }
