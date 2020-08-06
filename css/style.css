@@ -11,15 +11,19 @@ img {
 .scaled:hover {
   opacity: 1;
   transform: scale(0.92);
-  display: inline-block; transition: opacity 200ms ease 0s, transform 600ms ease 0s;
+  display: inline-block;
+  transition: opacity 200ms ease 0s, transform 600ms ease 0s;
 }
 
-.header {
+header {
   position: static;
-  display: block;
+  /*display: block;*/
   text-align: unset;
   background-color: #ffffff;
   margin: 0px;
+
+  text-align: center;
+  /*display: inline-block;*/
 }
 
 * {
@@ -31,6 +35,7 @@ body {
   background-color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
+  text-align: center;
 }
 
 h1, h2, h3, h4 {
@@ -72,7 +77,7 @@ a {
 }
 
 .footer a {
-  font-size: 36px;
+  font-size: 1.5em;
 }
 
 a {
@@ -164,7 +169,7 @@ a:active {
 
 .container {
   padding: 0 20px;
-  max-width: 1024px;
+  /*max-width: 1024px;*/
   text-align: center;
   display: inline-block;
 }
@@ -180,12 +185,14 @@ a:active {
   max-width: 1024px;
   text-align: center;
 }
+
 .footer {
   margin: auto;
-  max-width: 1024px;
+  /*max-width: 1024px;*/
   text-align: center;
 }
-.footer h3{
+
+.footer h3 {
   text-align: center;
   padding: 30px;
 }
@@ -199,7 +206,6 @@ a:active {
   text-align: center;
 }
 
-
 #hero {
   background-color: #ffe4e1;
   text-align: center
@@ -210,11 +216,11 @@ a:active {
   margin-top: 1em;
   margin-left: 1em;
   margin-right: 1em;
-  margin-bottom: 1px;
+  margin-bottom: 1em;
   padding-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
-  padding-bottom: 1px;
+  padding-bottom: 1em;
 }
 
 #hero p {
@@ -287,7 +293,9 @@ nav>ul {
 
 .profilepic {
   background-color: #fff0f5;
-  float: left;
+  max-width: 400px;
+  max-height: 400px;
+  /*float: left;*/
 }
 
 #mystorie {
@@ -304,13 +312,14 @@ nav>ul {
   padding: 2em;
 }
 
-#myBio li,p{
+#myBio li, p {
   text-align: justify;
 }
 
 #myvalues {
   text-align: center;
 }
+
 #myvalues p {
   text-align: justify;
 }
@@ -324,7 +333,6 @@ nav>ul {
 
   .navtoggle li:not(:last-child) {
     display: none;
-
   }
 
   .navtoggle, .navtoggle.responsive {
@@ -334,6 +342,20 @@ nav>ul {
 
   .navtoggle.responsive li {
     display: block;
+    text-align: right;
+  }
+
+  .col-md-l8 p, h2 {
+    text-align: center;
+  }
+  .col-md-l82 p, h2 {
+    text-align: center;
+  }
+  .col-md-r8 p, h2 {
+    text-align: center;
+  }
+  .col-md-r82 p, h2 {
+    text-align: center;
   }
 }
 
@@ -355,6 +377,24 @@ Medium devices (640px and larger)
     display: inline-block;
     float: left;
   }
+  .col-md-l8 {
+    width: 25%;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+  }
+  .col-md-l8 p, h2 {
+    text-align: center;
+  }
+  .col-md-l82 {
+    width: 25%;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+  }
+  .col-md-l82 p, h2 {
+    text-align: center;
+  }
 
   .col-md-l6 p, h3 {
     text-align: left;
@@ -365,6 +405,24 @@ Medium devices (640px and larger)
     padding: 10px;
     display: inline-block;
     float: right;
+  }
+  .col-md-r8 {
+    width: 25%;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+  }
+  .col-md-r8 p, h2 {
+    text-align: center;
+  }
+  .col-md-r82 {
+    width: 25%;
+    padding: 10px;
+    display: inline-block;
+    float: right;
+  }
+  .col-md-r82 p, h2 {
+    text-align: center;
   }
 
   .col-md-r6 p, h3 {
